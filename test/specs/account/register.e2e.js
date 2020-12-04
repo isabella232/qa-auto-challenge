@@ -9,7 +9,7 @@ describe('Register Feature', () => {
         RegisterPage.open();
     })
 
-    it('try to register with invalid confirm password', () => {
+    it('try to register with invalid password confirmation', () => {
 
         const errorMessage = 'Password confirmation does not match password!'
         
@@ -34,7 +34,7 @@ describe('Register Feature', () => {
         
     });
 
-    it('success to register', () => {
+    it('successful registration', () => {
 
         const successMessage = 'Your Account Has Been Created!'
         
