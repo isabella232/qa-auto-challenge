@@ -29,8 +29,8 @@ npm test
 
 The instructions are simple, but we are aware that the framework might not work for you, so if you enconter issues with the current solution feel free to take one of the following paths:
 
-    1. Start a fresh project using any framework of your choice and try to automate the same scenarios.
-    2. Send us a report with the problems you enconter and why you were not able to run the tests. Try to be as detailed as possible, let us know what problems you found, what did you do to troubleshoot them and finally what is a possible solution for this automation project.
+1. Start a fresh project using any framework of your choice and try to automate the same scenarios.
+2. Send us a report with the problems you enconter and why you were not able to run the tests. Try to be as detailed as possible, let us know what problems you found, what did you do to troubleshoot them and finally what is a possible solution for this automation project.
 
 ## What we expect to see
 
