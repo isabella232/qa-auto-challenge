@@ -14,8 +14,8 @@ class LoginPage extends Page {   /**
     get titleSuccess () { return $('#content h1')}
 
     /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
+     * a method to encapsulate automation code to interact with the page
+     * e.g. to log in using username and password
      */
     login (loginData) {
         this.inputEmail.setValue(loginData.email);

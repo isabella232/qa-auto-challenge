@@ -22,8 +22,8 @@ class RegisterPage extends Page {   /**
     get titleSuccess () { return $('#content h2')}
 
     /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
+     * a method to encapsulate automation code to interact with the page
+     * e.g. to register
      */
     register (registerData) {
         this.inputFirstName.setValue(registerData.firstName);
