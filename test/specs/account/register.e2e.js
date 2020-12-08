@@ -22,16 +22,25 @@ describe('Register Feature', () => {
 
     it('try to register with empty firstName', () => {
         
-        const errorMessage = 'First Name must be between 1 and 32 characters!'
-        
-        let testData = defaultDataRegister();
-        testData.firstName = '';
-
+        const errorMessage = 'First Name must be between 1 and 32 characters!';
+        let TestData = function() {
+                this.firstName = defaultDataRegister.firstName;
+                this.lastName = defaultDataRegister.lastName;
+                this.email = defaultDataRegister.email;
+                this.telephone = defaultDataRegister.telephone;
+                this.password = defaultDataRegister.password;
+                this.confirmPassword = defaultDataRegister.confirmPassword;
+                this.agree = defaultDataRegister.agree;
+        }
+        TestData.noFirstName = function() {
+            this.firstName = '';
+        }
+        let testData = new TestData();
+        testData.noFirstName();
         RegisterPage.open();
-        RegisterPage.register(testData1);      
+        RegisterPage.register(testData);      
         expect(RegisterPage.lblError).toHaveText(errorMessage);
-        expect(browser).toHaveUrlContaining('route=account/regisster')
-        
+        expect(browser).toHaveUrlContaining('route=account/register')
     });
 
     it('successful registration', () => {
