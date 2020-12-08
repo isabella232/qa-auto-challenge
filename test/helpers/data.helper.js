@@ -19,7 +19,21 @@ function defaultUser() {
     }
 };
 
+let TestData = function() {
+    this.firstName = defaultDataRegister.firstName;
+    this.lastName = defaultDataRegister.lastName;
+    this.email = defaultDataRegister.email;
+    this.telephone = defaultDataRegister.telephone;
+    this.password = defaultDataRegister.password;
+    this.confirmPassword = defaultDataRegister.confirmPassword;
+    this.agree = defaultDataRegister.agree;
+}
+TestData.noFirstName = function() {
+this.firstName = '';
+}
+
 module.exports = { 
     defaultDataRegister, 
-    defaultUser 
+    defaultUser,
+    TestData
 }
